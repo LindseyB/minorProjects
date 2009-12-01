@@ -1,0 +1,17 @@
+Minor Projects
+
+-----------------------------------------------
+
+* BinarySearchTree: Generic BST done in C++ using templates
+* JavaServerClient: Simple Java Server/Client example
+* LinkedList: Generic linkedlist done in C++ using templates
+* RandomWord: Python code to generate a random word from an input dictionary using Markov Chains
+* ScreensaveToggler: Simple C# app that enables or disables the screensaver in Windows
+* Stack: Generic stack done in C++ using templates
+* Wallpaper Paste: Automatic wallpaper rotator written in C#, obsolete in Windows 7
+* caffeinecounter.c: example command line input and output in c
+* Convert360.java: generates windows batch files to converty files to xbox friendly formats using VLC
+* linkedlist.c: Simple C linked list implementation
+* md5.c: md5 hashing in C
+* stack.c: Simple C stack
+* vector.c: dynamically resizing array in C
