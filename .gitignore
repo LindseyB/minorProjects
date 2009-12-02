@@ -1,0 +1,9 @@
+*.sln
+*.ico
+*.csproj
+*.manifest
+*.application
+*.pdb
+*.xml
+*.suo
+AssemblyInfo.cs

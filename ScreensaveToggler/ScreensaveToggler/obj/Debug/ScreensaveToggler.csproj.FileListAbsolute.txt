@@ -1,0 +1,10 @@
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\bin\Debug\ScreensaveToggler.exe
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\bin\Debug\ScreensaveToggler.pdb
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\obj\Debug\ScreensaveToggler.exe
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\obj\Debug\ScreensaveToggler.pdb
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\bin\Debug\ScreensaveToggler.exe.manifest
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\bin\Debug\ScreensaveToggler.application
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\obj\Debug\ScreensaveToggler.TrustInfo.xml
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\obj\Debug\ScreensaveToggler.exe.manifest
+C:\Users\Lindsey\Documents\code\ScreensaveToggler\ScreensaveToggler\obj\Debug\ScreensaveToggler.application
