@@ -25,8 +25,8 @@ namespace ScreensaveToggler
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey("Control Panel\\Desktop", true);
             
-            // hackey way to tell if screensaver is enabled or disabled due to a bug with screensaveactive
-            if (key.GetValue("SCRNSAVE.EXE") == null || key.GetValue("ScreenSaveTimeOut").ToString() ==  "0")
+            // workaround for seeing if screensaver is active
+            if (key.GetValue("SCRNSAVE.EXE") == null)
                 return false;
             return true;
         }
@@ -34,18 +34,33 @@ namespace ScreensaveToggler
         public static void SetScreenSaverActive(bool setActive) 
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Control Panel\\Desktop", true);
+            String screensaver;
 
-            // disabling the screen is done by setting the timeout value because screensaveactive
-            // is always true no matter what
             if (setActive)
             {
-                // set timeout to 30 minutes
-                key.SetValue("ScreenSaveTimeOut", "1800");
+                // get what the screensaver was and restore screensaver key
+                try
+                {
+                    screensaver = key.GetValue("Dummy").ToString();
+                }
+                catch (System.NullReferenceException)
+                {
+                    return;
+                }
+
+                key.CreateSubKey("SCRNSAVE.EXE");
+                key.SetValue("SCRNSAVE.EXE", screensaver);
+                key.DeleteValue("Dummy");
             }
             else
             {
-                // set timeout to nothing
-                key.SetValue("ScreenSaveTimeOut", "0");
+                // making inactive
+                // create a key to store the screensaver in and delete original
+                screensaver = key.GetValue("SCRNSAVE.EXE").ToString();
+                key.CreateSubKey("Dummy");
+                key.SetValue("Dummy", screensaver);
+                key.DeleteValue("SCRNSAVE.EXE");
+                
             }
 
             key.Close();
